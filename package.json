@@ -28,12 +28,6 @@
     "lint:style:fix": "stylelint --fix 'src/**/*.{css,less,sass,scss}'",
     "preinstall": "typesync || :"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",

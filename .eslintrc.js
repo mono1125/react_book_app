@@ -29,13 +29,13 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    // "lines-between-class-members": [
-    //   "error",
-    //   "always",
-    //   {
-    //     expectAfterSingleLine: true,
-    //   },
-    // ],
+    'lines-between-class-members': [
+      'error',
+      'always',
+      {
+        expectAfterSingleLine: true,
+      },
+    ],
     'no-void': [
       'error',
       {
@@ -85,6 +85,15 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': [
+      // 関数コンポネントの関数タイプに関するルール
+      // namedComponents, unnamedComponentsにそれぞれ使用する関数宣言タイプを指定する
+      // (Default) namedComponent: function-declaration
+      // (Default) unnamedComponents: function-expression
+      // 明示的に arrow-functionとすることでアロー関数でのコンポネント宣言を適用する
+      2,
+      { namedComponents: 'arrow-function' },
+    ],
   },
   overrides: [
     {
