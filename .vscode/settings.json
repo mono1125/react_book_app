@@ -19,10 +19,14 @@
   "aws.profile": "profile:default",
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint":true
   },
   "editor.tabSize": 2,
   "terminal.integrated.fontSize": 11,
+  "css.validate":false,
+  "less.validate":false,
+  "scss.validate": false,
   "editor.formatOnSave": false,
   "eslint.packageManager": "npm",
   "typescript.enablePromptUseWorkspaceTsdk": true,
