@@ -17,8 +17,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --verbose",
     "eject": "react-scripts eject",
+    "fix": "npm run -s format && npm run -s lint:fix",
+    "format": "prettier --write --loglevel=warn '{public,src}/**/*.{js,jsx,ts,tsx,html,gql,graphql,json}'",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts.tsx}'",
+    "lint:conflict": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "preinstall": "typesync || :"
   },
   "eslintConfig": {
@@ -47,6 +50,7 @@
     "@typescript-eslint/parser": "^5.35.1",
     "eslint": "^8.22.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -55,6 +59,7 @@
     "eslint-plugin-react": "^7.31.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "msw": "^0.44.2",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   }
 }

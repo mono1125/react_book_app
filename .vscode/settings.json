@@ -1,0 +1,61 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontSize": 13,
+  "python.showStartPage": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "jupyter.interactiveWindowMode": "perFile",
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "$HOME/.vimrc",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.defaultProfile.windows": "",
+  "json.schemas": [],
+  "aws.profile": "profile:default",
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.tabSize": 2,
+  "terminal.integrated.fontSize": 11,
+  "editor.formatOnSave": false,
+  "eslint.packageManager": "npm",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]":{
+    "editor.formatOnSave": true
+  },
+  "[graphql]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'Noto Sans', 'Droid Sans Mono', 'monospace', monospace",
+  "bracketPairColorizer.depreciation-notice": false,
+}
