@@ -35,15 +35,6 @@ module.exports = {
     // -> import React from 'react'でエラーが出るのを回避
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    // クラスメンバ定義の間に空行を入れるかどうかのルール
-    // -> 1行記述のメンバのときは空行を入れなくて良いように設定
-    'lines-between-class-members': [
-      'error',
-      'always',
-      {
-        expectAfterSingleLine: true,
-      },
-    ],
     // 式としてのvoid演算子の使用を禁止するルール
     // -> EffectHook内で非同期処理を記述する際に@typescript-eslint/no-floating-promises
     // ルールに抵触してしまうのを回避するのにvoid文を記述する必要があるため文としての使用を許可をしている。
